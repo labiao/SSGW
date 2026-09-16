@@ -5,6 +5,7 @@ This repository contains the PyTorch implementation of  the paper **Semi-Supervi
 ## 📢 News
 
 - **[2026-09-16]** The training and evaluation code is prepared for release.
+- **[2026-09-16]** The HB-GWR, BJ-GWR, and GS-GWR datasets are available on [Baidu Netdisk](https://pan.baidu.com/s/1xTcwGP0Q8Lm2HkfsPsW95Q?pwd=4ddt).
 - **[2026-09-01]** The codes for our recent works, including [SGGWSeg](https://github.com/2022jiangjiazheng/SGGWSeg), [GWSegNet](https://github.com/labiao/GWSegNet), and [TFCL-Net](https://github.com/HariwW/TFCL-Net) are also publicly available.
 - **[Coming Soon]** The dataset access will be released.
 
@@ -45,11 +46,7 @@ data/greatwall/
 
 Each line in a split file contains an image path and its mask path separated by a space. Both paths are relative to `data/greatwall/greatwall_beijing/`.
 
-| Dataset | Study area | Split included | Download |
-| :-----: | :--------: | :------------: | :------: |
-| **HB-GWR** | Hebei | Train / validation | *Coming soon* |
-| **BJ-GWR** | Beijing | Train / validation | *Coming soon* |
-| **GS-GWR** | Gansu | Train / validation | *Coming soon* |
+All three regional datasets are available in the shared SSGW folder on [Baidu Netdisk](https://pan.baidu.com/s/1xTcwGP0Q8Lm2HkfsPsW95Q?pwd=4ddt).
 
 To use another local location, change `data_root` in `configs/gw.yaml`.
 
