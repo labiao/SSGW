@@ -1,0 +1,32 @@
+# arguments for dataset
+dataset: gw
+nclass: 2
+crop_size: 504
+data_root: data/greatwall
+
+# arguments for label
+use_patch: False
+use_labeled: False
+use_sfc: True
+use_scc: False
+grid: 16
+aug: True
+
+# arguments for training
+epochs: 50
+batch_size: 4 # per GPU
+lr: 0.0005
+lr_multi: 1
+criterion:
+  name: CELoss
+  kwargs:
+    ignore_index: 255
+conf_thresh: 0.95
+
+# arguments for model
+model: dpt #deeplabv3plus
+backbone: dinov2_small
+patch: 4
+replace_stride_with_dilation: [False, False, True]
+dilations: [6, 12, 18]
+lock_backbone: True

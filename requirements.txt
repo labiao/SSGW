@@ -1,0 +1,8 @@
+numpy
+opencv-python
+Pillow
+PyYAML
+tensorboard
+torch
+torchvision
+tqdm

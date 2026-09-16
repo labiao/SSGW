@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.idea/
+.vscode/
+
+data/
+exp/
+pretrained/*.pth
+*.pth
+*.pt
+
+.DS_Store
